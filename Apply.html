@@ -1,0 +1,109 @@
+           
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Clout Enterprise| Affordable  loan solutions</title>
+
+
+
+    </head>
+    <body>
+        <header>
+        <nav class="navbar">
+            <h2>Clout Enterprises</h2>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="loan.html">Loan</a>
+                <a href="apply.html">Apply</a>
+                <a href="contact.html">Contact</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+
+            <div class="nav-buttons">
+                <buttons>Apply Now</buttons>
+                <buttons>Search</buttons>
+                <buttons>Sign in</buttons>
+                <buttons>Sign up</buttons>
+                </div>
+                </nav>
+              </header>
+
+
+              <div class="container">
+
+    <h1 class="section-title">Loan Application Form</h1>
+
+    <form id="loanForm">
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Surname</label>
+        <input type="text" required>
+
+        <label>Age</label>
+        <input type="number"  id="age"   required>
+
+        <label>Loan Type</label>
+        <select required>
+            <option>Student</option>
+            <option>Personal</option>
+            <option>Business</option>
+            <option>Emergency</option>
+        </select>
+
+        <label>Amount</label>
+        <input type="number" id="amount" min="500" max="50000" required>
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <p id="successMsg" style="color:green; display:none;">
+    Application submitted successfully!</p>
+
+    <p id="ageError" style="color:red; display:none;"></p>
+
+<div class="footer-links"> 
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="loan.html">Loan</a>
+                <a href="apply.html">Apply</a>
+                <a href="contact.html">Contact</a>
+                <a href="feedback.html">Feedback</a> 
+                </div>
+                </div>
+                
+                <p>© 2026 Clout Enterprise | Contact information</p>
+
+
+
+            <script>
+document.getElementById("loanForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const msg = document.getElementById("successMsg");
+    msg.style.display = "block";
+
+    this.reset();
+
+    setTimeout(() => {
+        msg.style.display = "none";
+    }, 3000); // disappears after 3 seconds
+});
+</script>
+
+                
+        
+                     
+
+             </body>
+                </html>
+   
+
+            
